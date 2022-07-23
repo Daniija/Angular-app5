@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="w-[30rem] bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
+    <div class="text-center text-white  px-4 pt-4">
+      <h2 class="text-[8rem]">Student Card</h2>
+    </div>
+    <div class="flex flex-col items-center pb-10">
+
+      <div class="field flex flex-col items-center">
+        <label class="text-[2rem] m-5 text-white" for="name">Name:</label>
+        <h2 class="text-white">{{ studentShow.name }}</h2>
+    </div>
+
+      <div class="field flex flex-col items-center">
+          <label class="text-[2rem] m-5 text-white"  for="name">Email:</label>
+          <h2 class="text-white">{{ studentShow.email }}</h2>
+      </div>
+
+      <div class="field flex flex-col items-center">
+          <label class="text-[2rem] m-5 text-white" for="name">Cohort:</label>
+          <h2 class="text-white">{{ studentShow.cohort }}</h2>
+      </div>
+
+      <div class="field flex flex-col items-center">
+        <label class="text-[2rem] m-5 text-white" for="name">Phone Number:</label>
+        <h2 class="text-white">{{ studentShow.phoneNumber }}</h2>
+    </div>
+
+        <div class="flex mt-4 space-x-3 lg:mt-6">
+            <a routerLink="/view-student" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</a>
+        </div>
+    </div>
+  </div>
+</div>

@@ -28,6 +28,11 @@ export class ViewStudentComponent implements OnInit {
     console.log(location);
   }
 
+  getStudent(location: string): void {
+    this.router.navigate([`student/${location}`]);
+    console.log(location);
+  }
+
   deleteStudent(id: string): void {
     this.studentService.deleteStudent(id).subscribe({
       next: () => {
